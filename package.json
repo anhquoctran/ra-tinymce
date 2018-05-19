@@ -40,8 +40,8 @@
     "babel-preset-stage-0": "^6.16.0"
   },
   "dependencies": {
-    "react": "~15.4.0",
-    "react-tinymce": "^0.5.1",
-    "tinymce": "^4.5.5"
+    "react": "^0.14.0 || ^15.0.0 || ^16.0.0",
+    "react-tinymce": "^0.7.0",
+    "tinymce": "^4.7.13"
   }
 }
