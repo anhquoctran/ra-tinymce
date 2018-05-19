@@ -1,6 +1,7 @@
 
-import React, { PropTypes } from 'react'
-import TinyMCE from 'react-tinymce'
+import React from 'react';
+import PropTypes from 'prop-types';
+import TinyMCE from 'react-tinymce';
 
 const TinyMCEInput = ({
   id,
