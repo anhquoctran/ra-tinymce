@@ -11,7 +11,7 @@ const TinyMCEInput = ({
   input = {},
   config
 }) => {
-  {value="", onChange=()=>{}} = input;
+  const {value="", onChange=()=>{}} = input;
 
   return <TinyMCE
       id={id}
