@@ -1,6 +1,6 @@
 {
   "name": "@simpo/aor-tinymce-input",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "<TinyMCEInput /> component for admin-on-rest, useful for editing HTML in admin GUIs",
   "main": "lib/index.js",
   "scripts": {
@@ -15,7 +15,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Whitebolt/aor-tinymce-input"
+    "url": "git+https://github.com/Whitebolt/aor-tinymce-input.git"
   },
   "keywords": [
     "reactjs",
@@ -28,9 +28,9 @@
   "author": "Loic Mahieu",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/loicmahieu/aor-tinymce-input/issues"
+    "url": "https://github.com/Whitebolt/aor-tinymce-input/issues"
   },
-  "homepage": "https://github.com/loicmahieu/aor-tinymce-input#readme",
+  "homepage": "https://github.com/Whitebolt/aor-tinymce-input#readme",
   "devDependencies": {
     "babel-cli": "^6.18.0",
     "babel-plugin-add-module-exports": "^0.2.1",
@@ -41,7 +41,7 @@
   },
   "dependencies": {
     "react": "^0.14.0 || ^15.0.0 || ^16.0.0",
-    "react-tinymce": "^0.7.0",
+    "@simpo/react-tinymce": "^0.7.0",
     "tinymce": "^4.7.13"
   }
 }
