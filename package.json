@@ -1,6 +1,6 @@
 {
   "name": "@simpo/aor-tinymce-input",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "<TinyMCEInput /> component for admin-on-rest, useful for editing HTML in admin GUIs",
   "main": "lib/index.js",
   "scripts": {
@@ -15,7 +15,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/loicmahieu/aor-tinymce-input.git"
+    "url": "git+https://github.com/Whitebolt/aor-tinymce-input"
   },
   "keywords": [
     "reactjs",
