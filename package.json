@@ -1,6 +1,6 @@
 {
   "name": "@simpo/aor-tinymce-input",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "<TinyMCEInput /> component for admin-on-rest, useful for editing HTML in admin GUIs",
   "main": "lib/index.js",
   "scripts": {

@@ -8,25 +8,24 @@ const TinyMCEInput = ({
   disabled,
   label,
   name,
-  input: {
-    value,
-    onChange
-  },
+  input = {},
   config
-}) => (
-  <TinyMCE
-    id={id}
-    content={value}
-    config={{
+}) => {
+  {value="", onChange=()=>{}} = input;
+
+  return <TinyMCE
+      id={id}
+      content={value}
+      config={{
       skin: false,
       theme: 'modern',
       ...config
     }}
-    onChange={e => {
+      onChange={e => {
       onChange(e.target.getContent())
     }}
-  />
-)
+  />;
+}
 
 TinyMCEInput.propTypes = {
   addField: PropTypes.bool.isRequired,
