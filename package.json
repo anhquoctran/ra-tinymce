@@ -1,6 +1,6 @@
 {
   "name": "@simpo/aor-tinymce-input",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "<TinyMCEInput /> component for admin-on-rest, useful for editing HTML in admin GUIs",
   "main": "lib/index.js",
   "scripts": {
@@ -40,8 +40,8 @@
     "babel-preset-stage-0": "^6.16.0"
   },
   "dependencies": {
-    "react": "^0.14.0 || ^15.0.0 || ^16.0.0",
     "@simpo/react-tinymce": "^0.7.0",
+    "react": "^0.14.0 || ^15.0.0 || ^16.0.0",
     "tinymce": "^4.7.13"
   }
 }

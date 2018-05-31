@@ -1,7 +1,7 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import TinyMCE from 'react-tinymce';
+import TinyMCE from '@simpo/react-tinymce';
 
 const TinyMCEInput = ({
   id,
