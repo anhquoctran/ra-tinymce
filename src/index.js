@@ -25,6 +25,9 @@ const sanitizeRestProps = ({
 	textAlign,
 	translate,
 	translateChoice,
+	toolbar,
+	menubar,
+	plugins,
 	...rest
 }) => rest;
 
@@ -58,6 +61,9 @@ export class TinyMCEInput extends React.Component {
 			source,
 			type,
 			config,
+			plugins,
+			toolbar,
+			menubar,
 			...rest
 		} = this.props;
 		if (typeof meta === 'undefined') {
@@ -75,7 +81,7 @@ export class TinyMCEInput extends React.Component {
 			error={!!(touched && error)}
 			helperText={touched && error}
 			className={className}
-			init={{...config}}
+			config={{plugins, menubar, toolbar, ...options}}
 			content={value}
 			{...options}
 			{...input}
@@ -100,7 +106,9 @@ TinyMCEInput.propTypes = {
 	options: PropTypes.object,
 	resource: PropTypes.string,
 	source: PropTypes.string,
-	config: PropTypes.object
+	toolbar: PropTypes.array,
+	menubar: PropTypes.array,
+	plugins: PropTypes.array
 };
 
 TinyMCEInput.defaultProps = {
@@ -108,7 +116,9 @@ TinyMCEInput.defaultProps = {
 	onChange: () => {},
 	onFocus: () => {},
 	options: {},
-	config: {}
+	toolbar: [],
+	menubar: [],
+	plugins: []
 };
 
 export default addField(TinyMCEInput);
