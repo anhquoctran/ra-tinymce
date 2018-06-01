@@ -106,8 +106,8 @@ TinyMCEInput.propTypes = {
 	options: PropTypes.object,
 	resource: PropTypes.string,
 	source: PropTypes.string,
-	toolbar: PropTypes.string,
-	menubar: PropTypes.string,
+	toolbar: PropTypes.oneOfType([PropTypes.string, PropTypes.boolean, PropTypes.array]),
+	menubar: PropTypes.oneOfType([PropTypes.string, PropTypes.boolean]),
 	plugins: PropTypes.string
 };
 
@@ -116,8 +116,8 @@ TinyMCEInput.defaultProps = {
 	onChange: () => {},
 	onFocus: () => {},
 	options: {},
-	toolbar: "undo redo | bold italic",
-	menubar: "",
+	toolbar: true,
+	menubar: true,
 	plugins: ""
 };
 
