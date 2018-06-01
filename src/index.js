@@ -75,7 +75,7 @@ export class TinyMCEInput extends React.Component {
 			error={!!(touched && error)}
 			helperText={touched && error}
 			className={className}
-			config={{...config}}
+			init={{...config}}
 			content={value}
 			{...options}
 			{...input}
