@@ -106,9 +106,9 @@ TinyMCEInput.propTypes = {
 	options: PropTypes.object,
 	resource: PropTypes.string,
 	source: PropTypes.string,
-	toolbar: PropTypes.array,
-	menubar: PropTypes.array,
-	plugins: PropTypes.array
+	toolbar: PropTypes.string,
+	menubar: PropTypes.string,
+	plugins: PropTypes.string
 };
 
 TinyMCEInput.defaultProps = {
@@ -116,9 +116,9 @@ TinyMCEInput.defaultProps = {
 	onChange: () => {},
 	onFocus: () => {},
 	options: {},
-	toolbar: [],
-	menubar: [],
-	plugins: []
+	toolbar: "undo redo | bold italic",
+	menubar: "",
+	plugins: ""
 };
 
 export default addField(TinyMCEInput);
