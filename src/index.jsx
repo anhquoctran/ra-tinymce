@@ -106,8 +106,8 @@ TinyMCEInput.propTypes = {
 	options: PropTypes.object,
 	resource: PropTypes.string,
 	source: PropTypes.string,
-	toolbar: PropTypes.oneOfType([PropTypes.string, PropTypes.boolean, PropTypes.array]),
-	menubar: PropTypes.oneOfType([PropTypes.string, PropTypes.boolean]),
+	toolbar: PropTypes.oneOfType([PropTypes.string, PropTypes.bool, PropTypes.array]),
+	menubar: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
 	plugins: PropTypes.string
 };
 
