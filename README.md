@@ -1,46 +1,66 @@
-# `<TinyMCEInput>` for admin-on-rest
+# `<TinyMCEInput>` input for React-Admin Framework
 
-<TinyMCEInput> component for react-admin, useful for editing HTML in admin GUIs.
+<TinyMCEEditor> component for react-admin, useful for editing HTML in admin GUIs.
 
-Binding of [`<TinyMCE />`](https://github.com/instructure-react/react-tinymce) for [react-admin](https://marmelab.com/react-admin/).
+* All TinyMCE options are supported
+* TypeScript definitions
 
-This is a fork of [aor-tinymce-input](https://github.com/LoicMahieu/aor-tinymce-input), changed to work on latest react-admin rather than admin-on-rest.
+Binding of [`<TinyMCEEditor />`](https://github.com/anhquoctran/ra-tinymce-input) for [react-admin](https://marmelab.com/react-admin/).
 
 ## Installation
 
-```sh
-npm install aor-tinymce-input --save
+```bash
+$ npm install ra-tinymce --save
 ```
 
 or 
 
-```sh
-yarn add aor-tinymce-input
+```bash
+$ yarn add ra-tinymce
 ```
 
-## Usage
+## Basic usage
 
-```js
-import React from 'react';
-import {SimpleForm, Edit, TextInput } from 'ra-ui-materialui';
+```tsx
+import React, { FC } from 'react';
+import {
+  SimpleForm, 
+  Edit,
+  TextInput
+} from 'react-admin';
 
-import tinymce from 'tinymce/tinymce';
-// react-tinymce use global ref
-window.tinymce = tinymce;
+import TinyMCEInput, { TinyMCEInputProps } from 'ra-tinymce';
 
-import 'tinymce/themes/modern/theme';
-import 'tinymce/skins/lightgray/skin.min.css';
-
-import TinyMCEInput from 'aor-tinymce-input';
-
-export const PostEdit = props=><Edit>
-    <SimpleForm>
+const PostEdit: FC<TinyMCEInputProps> = (props) => {
+  return (
+    <Edit>
+      <SimpleForm>
         <TextInput source="title" />
-        <TinyMCEInput source="content" plugins={["code"]} />
-    </SimpleForm>
-</Edit>;
+        <TinyMCEEditor
+          source="content"
+          init={{
+            height: 500,
+            menubar: false,
+            plugins: [
+              'advlist autolink lists link image charmap print preview anchor',
+              'searchreplace visualblocks code fullscreen',
+              'insertdatetime media table paste code help wordcount'
+            ],
+            toolbar: 'undo redo | formatselect | ' +
+            'bold italic backcolor | alignleft aligncenter ' +
+            'alignright alignjustify | bullist numlist outdent indent | ' +
+            'removeformat | help',
+            content_style: 'body { font-family:Helvetica,Arial,sans-serif; font-size:14px }'
+          }}
+        />
+      </SimpleForm>
+    </Edit>
+  );
+};
+
+export default PostEdit;
 ```
 
 ## License
 
-This library is licensed under the [MIT Licence](LICENSE), and sponsored by [Whitebolt](https://whitebolt.net).
+This library is licensed under the [MIT Licence](LICENSE).

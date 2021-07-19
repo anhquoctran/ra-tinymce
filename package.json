@@ -1,11 +1,12 @@
 {
-  "name": "ra-tinymce-input",
-  "version": "1.2.3",
-  "description": "<TinyMCEInput /> component for react-admin, useful for editing HTML in admin GUIs",
+  "name": "ra-tinymce",
+  "private": false,
+  "version": "1.0.1",
+  "description": "<TinyMCEEditor /> component for react-admin, useful for editing HTML in admin GUIs",
   "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "NODE_ENV=production babel ./src -d lib"
+    "build": "rimraf lib && tsc --build ."
   },
   "files": [
     "LICENSE",
@@ -15,7 +16,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Whitebolt/ra-tinymce-input.git"
+    "url": "git+https://github.com/anhquoctran/ra-tinymce-input.git"
   },
   "keywords": [
     "reactjs",
@@ -26,36 +27,36 @@
     "tinymce",
     "react-admin"
   ],
-  "author": "Whitebolt <hello@whitebolt.net",
+  "author": "anhquoctran <aquoc.hue@outlook.com",
   "contributors": [
     {
-      "name": "Loic Mahieu"
-    },
-    {
-      "name": "Stephen Simpson",
-      "email": "stephen@whitebolt.net"
-    },
-    {
-      "name": "Kristjan Allikas",
-      "email": "kris@whitebolt.net"
+      "name": "Anh Quoc Tran"
     }
   ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Whitebolt/ra-tinymce-input/issues"
   },
-  "homepage": "https://github.com/Whitebolt/ra-tinymce-input#readme",
+  "homepage": "https://github.com/anhquoctran/ra-tinymce-input",
   "devDependencies": {
+    "@types/react": "^17.0.14",
     "babel-cli": "^6.18.0",
     "babel-plugin-add-module-exports": "^0.2.1",
     "babel-plugin-transform-react-jsx": "^6.8.0",
     "babel-preset-es2015": "^6.18.0",
     "babel-preset-react": "^6.16.0",
-    "babel-preset-stage-0": "^6.16.0"
+    "babel-preset-stage-0": "^6.16.0",
+    "rimraf": "^3.0.2",
+    "tslib": "^2.3.0",
+    "typescript": "^4.3.5"
   },
   "dependencies": {
-    "react-tinymce": "^0.7.0",
-    "react": "^0.14.0 || ^15.0.0 || ^16.0.0",
-    "tinymce": "^4.7.13"
+    "@tinymce/tinymce-react": "^3.12.6",
+    "prop-types": "^15.7.2",
+    "ra-core": "^3.17.0",
+    "react": "^17.0.2",
+    "react-admin": "^3.17.0",
+    "react-final-form": "^6.5.3",
+    "tinymce": "^5.8.2"
   }
 }
