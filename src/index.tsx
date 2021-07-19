@@ -2,10 +2,16 @@ import React, { FC, Fragment } from 'react';
 import { Editor, IAllProps } from '@tinymce/tinymce-react';
 import { useInput, InputProps } from 'react-admin';
 
-export type TinyMCEInputProps = {
+/**
+ * Input props for TinyMCE Editor
+ */
+export type TinyMCEInputProps = IAllProps & InputProps;
 
-} & IAllProps & InputProps;
-
+/**
+ * Binding component `TinyMCE` editor for `react-admin` framework
+ * @param props Props for TinyMCE Editor component
+ * @returns 
+ */
 const TinyMCEEditor: FC<TinyMCEInputProps> = (props) => {
 
 	const {
@@ -44,7 +50,7 @@ const TinyMCEEditor: FC<TinyMCEInputProps> = (props) => {
 				textareaName={textareaName}
 			/>
 		</Fragment>
-	)
+	);
 }
 
 export default TinyMCEEditor;
