@@ -1,6 +1,4 @@
-# `<TinyMCEEditor />` input for React-Admin Framework
-
-## <TinyMCEEditor /> component for React-Admin framework, useful for editing HTML in admin GUIs.
+# `<TinyMCEEditor />` input component for React-Admin Framework
 
 * All TinyMCE options are fully supported
 * TypeScript definitions are supported
@@ -64,3 +62,7 @@ export default PostEdit;
 ## License
 
 This library is licensed under the [MIT Licence](LICENSE).
+
+## Author
+
+This library is maintain by [@anhquoctran](https://github.com/anhquoctran)
