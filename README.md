@@ -1,9 +1,9 @@
-# `<TinyMCEInput>` input for React-Admin Framework
+# `<TinyMCEEditor />` input for React-Admin Framework
 
-<TinyMCEEditor> component for react-admin, useful for editing HTML in admin GUIs.
+## <TinyMCEEditor /> component for React-Admin framework, useful for editing HTML in admin GUIs.
 
-* All TinyMCE options are supported
-* TypeScript definitions
+* All TinyMCE options are fully supported
+* TypeScript definitions are supported
 
 Binding of [`<TinyMCEEditor />`](https://github.com/anhquoctran/ra-tinymce-input) for [react-admin](https://marmelab.com/react-admin/).
 
