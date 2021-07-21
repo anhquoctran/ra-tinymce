@@ -1,7 +1,7 @@
 {
   "name": "ra-tinymce",
   "private": false,
-  "version": "1.0.0",
+  "version": "0.0.2",
   "description": "<TinyMCEEditor /> component for react-admin, useful for editing HTML in admin GUIs",
   "main": "lib/index.js",
   "scripts": {
